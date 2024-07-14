@@ -10,10 +10,4 @@ export async function POST( req: Request)
 }
 
 
-export async function GET()
-{
-    const shortnerService = new UrlShortenerServices();
-    const response = await shortnerService.getAllUrls();
-    return NextResponse.json({response});
-}
 
