@@ -17,8 +17,8 @@ const urlSchema = new mongoose.Schema({
 
 
 export interface IUrl extends Document {
-    originalUrl: String,
-    shortUrl: String
+    originalUrl: string,
+    shortUrl: string
 }
 
 const Url: Model<IUrl> = mongoose.models.Url || mongoose.model<IUrl> ('Url',urlSchema);
